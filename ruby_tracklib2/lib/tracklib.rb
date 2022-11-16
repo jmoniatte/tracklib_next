@@ -1,8 +1,8 @@
 require "tracklib/version"
 require "rutie"
 
-module Tracklib2
+module TracklibNext
   unless defined?(TrackReader)
-    Rutie.new(:ruby_tracklib_version_two).init 'Init_Tracklib', __dir__
+    Rutie.new(:ruby_tracklib_next).init 'Init_Tracklib', __dir__
   end
 end
