@@ -24,7 +24,7 @@ methods!(
         let mut tracklib_section = tracklib2::write::section::standard::Section::new(trimmed_tracklib_schema);
         write_ruby_array_into_section(&mut tracklib_section, ruby_data);
 
-        Module::from_existing("Tracklib").get_nested_class("Section").wrap_data(
+        Module::from_existing("TracklibNext").get_nested_class("Section").wrap_data(
             WrappableSection {
                 section: tracklib2::write::section::Section::Standard(tracklib_section),
             },
@@ -44,7 +44,7 @@ methods!(
                 .unwrap();
         write_ruby_array_into_section(&mut tracklib_section, ruby_data);
 
-        Module::from_existing("Tracklib").get_nested_class("Section").wrap_data(
+        Module::from_existing("TracklibNext").get_nested_class("Section").wrap_data(
             WrappableSection {
                 section: tracklib2::write::section::Section::Encrypted(tracklib_section),
             },
@@ -271,7 +271,7 @@ fn write_ruby_array_into_section<SW: SectionWrite>(section: &mut SW, data: Array
 
 impl VerifiedObject for Section {
     fn is_correct_type<T: Object>(object: &T) -> bool {
-        object.class() == Module::from_existing("Tracklib").get_nested_class("Section")
+        object.class() == Module::from_existing("TracklibNext").get_nested_class("Section")
     }
 
     fn error_message() -> &'static str {
