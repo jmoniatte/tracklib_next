@@ -290,10 +290,10 @@ impl VerifiedObject for Time {
     }
 }
 
-module!(Tracklib);
+module!(TracklibNext);
 
 methods!(
-    Tracklib,
+    TracklibNext,
     rtself,
     fn write_track(metadata: Array, sections: Array) -> RString {
         let metadata_array = metadata.map_err(VM::raise_ex).unwrap();
