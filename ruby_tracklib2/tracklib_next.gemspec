@@ -6,11 +6,11 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Dan Larkin"]
   spec.email         = ["dan@danlarkin.org"]
 
-  spec.summary       = "tracklib"
+  spec.summary       = "tracklib_next"
   spec.description   = "RWGPS tracklib ruby gem"
   spec.homepage      = "https://ridewithgps.com"
   spec.licenses      = ["Apache-2.0", "MIT"]
-  spec.files         = ["tracklib.gemspec",
+  spec.files         = ["tracklib_next.gemspec",
                         "Rakefile",
                         "Gemfile",
                         "lib/tracklib.rb",
