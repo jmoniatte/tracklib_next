@@ -1,4 +1,4 @@
-require "tracklib/version"
+require "tracklib_next/version"
 require "rutie"
 
 module TracklibNext

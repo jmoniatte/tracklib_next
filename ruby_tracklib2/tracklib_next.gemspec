@@ -1,4 +1,4 @@
-require_relative 'lib/tracklib/version'
+require_relative 'lib/tracklib_next/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "tracklib_next"
@@ -13,8 +13,8 @@ Gem::Specification.new do |spec|
   spec.files         = ["tracklib_next.gemspec",
                         "Rakefile",
                         "Gemfile",
-                        "lib/tracklib.rb",
-                        "lib/tracklib/version.rb",
+                        "lib/tracklib_next.rb",
+                        "lib/tracklib_next/version.rb",
                         "Cargo.toml",
                         "Cargo.lock"]
   spec.files        += Dir["src/**/*.rs"]
